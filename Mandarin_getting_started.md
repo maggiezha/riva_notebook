@@ -25,56 +25,7 @@ This notebook walks you through the end-to-end process that NVIDIA engineers and
 
 The below diagram provides a high-level overview of the end-to-end engineering workflow required to realize the Riva Mandarin ASR service.
 
-
-
-```python
-from IPython.display import Image
-Image(filename='Mandarin-Riva.PNG')
-```
-
-
-    ---------------------------------------------------------------------------
-
-    FileNotFoundError                         Traceback (most recent call last)
-
-    <ipython-input-9-643bfaf586ba> in <module>()
-          1 from IPython.display import Image
-    ----> 2 Image(filename='Mandarin-Riva.PNG')
-    
-
-    /usr/local/lib/python3.7/dist-packages/IPython/core/display.py in __init__(self, data, url, filename, format, embed, width, height, retina, unconfined, metadata)
-       1019         self.unconfined = unconfined
-       1020         self.metadata = metadata
-    -> 1021         super(Image, self).__init__(data=data, url=url, filename=filename)
-       1022 
-       1023         if retina:
-
-
-    /usr/local/lib/python3.7/dist-packages/IPython/core/display.py in __init__(self, data, url, filename)
-        611         self.filename = None if filename is None else unicode_type(filename)
-        612 
-    --> 613         self.reload()
-        614         self._check_data()
-        615 
-
-
-    /usr/local/lib/python3.7/dist-packages/IPython/core/display.py in reload(self)
-       1041         """Reload the raw data from file or URL."""
-       1042         if self.embed:
-    -> 1043             super(Image,self).reload()
-       1044             if self.retina:
-       1045                 self._retina_shape()
-
-
-    /usr/local/lib/python3.7/dist-packages/IPython/core/display.py in reload(self)
-        629         """Reload the raw data from file or URL."""
-        630         if self.filename is not None:
-    --> 631             with open(self.filename, self._read_flags) as f:
-        632                 self.data = f.read()
-        633         elif self.url is not None:
-
-
-    FileNotFoundError: [Errno 2] No such file or directory: 'Mandarin-Riva.PNG'
+![png](./Mandarin-Riva.PNG)
 
 
 Beyond the data collection phase, the new language workflow for Riva is divided into three major stages:
