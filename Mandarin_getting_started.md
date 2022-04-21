@@ -166,7 +166,7 @@ The language models supported by Riva are n-gram model, which can be trained wit
 ### 3.3. Punctuation model
 
 The Punctuation model consists of the pre-trained Bidirectional Encoder Representations from Transformers (BERT).
-The model was trained with BERT base multilingual cased checkpoint on the ASR transcription and a subset of data from the [Tatoeba](https://tatoeba.org/en/) website's Chinese sentences.
+The model was trained with [Google's BERT base Chinese pretrained checkpoint](https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip) on the ASR transcription and a subset of data from the [Tatoeba](https://tatoeba.org/en/) website's Chinese sentences.
 
 We employed a BERT-base model for the task and leverage NeMo [script](https://github.com/NVIDIA/NeMo/blob/main/examples/nlp/token_classification/punctuation_capitalization_train_evaluate.py) for the training part. 
 
