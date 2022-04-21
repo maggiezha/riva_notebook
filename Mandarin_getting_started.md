@@ -25,7 +25,7 @@ This notebook walks you through the end-to-end process that NVIDIA engineers and
 
 The below diagram provides a high-level overview of the end-to-end engineering workflow required to realize the Riva Mandarin ASR service.
 
-![png](./Mandarin-Riva.PNG)
+![png](./Mandarin-Riva.png)
 
 
 Beyond the data collection phase, the new language workflow for Riva is divided into three major stages:
